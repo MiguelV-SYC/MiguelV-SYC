@@ -1,20 +1,11 @@
-name: Update README
+name: Test
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-    name: Update Profile README
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4.2.2
-      
-      - name: Update Recent Activity
-        uses: Readme-Workflows/recent-activity@v2.4.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo "OK"
