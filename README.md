@@ -11,3 +11,10 @@
 ![website] (aquí va el sitio de existir)
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MiguelV-SYC/MiguelV-SYC)
+
+
+### :zap: Actividad Reciente
+<!--START_SECTION:activity-->
+
+
+<!--END_SECTION:activity-->
