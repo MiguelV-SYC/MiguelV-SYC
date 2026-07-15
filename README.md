@@ -1,37 +1,77 @@
-# 👋 Hola, soy [Miguel Angel Villamizar Ardila]
+# 👋 Hola, soy Miguel Angel Villamizar Ardila
 
-## 🎓 Sobre mí
+## 💻 Sobre mí
 
-Soy estudiante de último semestre de Ingeniería de Sistemas de la Universidad Cooperativa de Colombia, apasionado por el desarrollo de software y el aprendizaje continuo. Adicional, soy Ingeniero Industrial
+Soy Ingeniero Industrial y estudiante de último semestre de Ingeniería de Sistemas en la Universidad Cooperativa de Colombia.
 
-Actualmente realizo mis prácticas profesionales en **SYC**, donde participo en el desarrollo de soluciones tecnológicas, fortaleciendo mis conocimientos en desarrollo backend, herramientas de automatización, implementación de IA en los diversos procesos y buenas prácticas de programación.
+Actualmente realizo mis prácticas profesionales en **Sistemas y Computadores S.A. (SYC)**, donde participo en proyectos de desarrollo backend, automatización de procesos, integración de IA y buenas prácticas de desarrollo de software.
+
+---
 
 ## 🚀 Tecnologías
 
-- PHP
-- JS
-- Python
-- PostgreSQL
-- SQL
-- Docker
-- Git
-- GitHub
+<p align="center">
 
+<img src="https://skillicons.dev/icons?i=php,python,js,postgres,docker,git,github,linux,vscode"/>
 
-## 🌱 Actualmente
+</p>
 
-- 💼 Practicante en SYC
-- 🎓 Último semestre de Ingeniería de Sistemas
-- 📚 Aprendiendo CI/CD, Docker y Kubernetes
+---
+
+## 📊 Estadísticas
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=MiguelV-SYC&show_icons=true&theme=github_dark&hide_border=true"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MiguelV-SYC&layout=compact&theme=github_dark&hide_border=true"/>
+
+</p>
+
+---
+
+## 🔥 Racha
+
+<p align="center">
+
+<img src="https://streak-stats.demolab.com?user=MiguelV-SYC&theme=github-dark&hide_border=true"/>
+
+</p>
+
+---
+
+## 📈 Actividad
+
+[![Miguel's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MiguelV-SYC&theme=github-dark)](https://github.com/MiguelV-SYC)
+
+---
+
+## 📋 GitHub Summary
+
+![](profile-summary-card-output/github_dark/0-profile-details.svg)
+
+![](profile-summary-card-output/github_dark/1-repos-per-language.svg)
+
+![](profile-summary-card-output/github_dark/2-most-commit-language.svg)
+
+---
+
+## 📊 Metrics
+
+![](github-metrics.svg)
+
+---
+
+## 🐍 Contribuciones
+
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/MiguelV-SYC/MiguelV-SYC/output/github-contribution-grid-snake-dark.svg"/>
+
+</p>
+
+---
 
 ## 📫 Contacto
 
-- Email: m.villamizar@syc.com.co
-
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MiguelV-SYC/MiguelV-SYC)
-
-## 📊 Métricas
-
-![Metrics](./github-metrics.svg)
-
-
+📧 m.villamizar@syc.com.co
