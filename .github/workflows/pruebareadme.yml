@@ -1,0 +1,36 @@
+name: Update GitHub Profile
+
+on:
+  schedule:
+    # Todos los días a las 08:00 UTC
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Update README
+        run: |
+          chmod +x scripts/update-readme.sh
+          ./scripts/update-readme.sh
+
+      - name: Commit changes
+        run: |
+          git add README.md
+          git diff --cached --quiet || git commit -m "docs: update profile"
+
+      - name: Push changes
+        run: git push
