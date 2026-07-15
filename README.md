@@ -30,11 +30,8 @@ Actualmente realizo mis prácticas profesionales en **SYC**, donde participo en 
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MiguelV-SYC/MiguelV-SYC)
 
+## 📊 Métricas
 
-### :zap: Actividad Reciente
-<!--START_SECTION:activity-->
-
-
-<!--END_SECTION:activity-->
+![Metrics](./github-metrics.svg)
 
 
