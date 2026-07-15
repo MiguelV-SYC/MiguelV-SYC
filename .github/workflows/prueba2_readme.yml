@@ -7,14 +7,21 @@ on:
 
 jobs:
   build:
-    name: Update Profile README
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v7
 
-      - name: Update Recent Activity
-        uses: Readme-Workflows/recent-activity@v2.4.1
+      - name: Update GitHub Activity
+        uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit README
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --staged --quiet || git commit -m "Update README activity"
+          git push
