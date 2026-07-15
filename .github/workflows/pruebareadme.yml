@@ -2,37 +2,36 @@ name: Update GitHub Profile
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Cada 12 horas
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-readme:
+  update-profile:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Actualiza la fecha en el README
-      - name: Update Date
-        uses: josStorer/github-profile-summary-cards@release
+      # Genera las GitHub Profile Summary Cards
+      - name: Generate GitHub Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Actualiza la actividad reciente
+      # Actualiza la actividad reciente en el README
       - name: Update Recent Activity
-        uses: Readme-Workflows/recent-activity@v2
+        uses: Readme-Workflows/recent-activity@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Actualiza los últimos repositorios
-      - name: Update Repositories
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      # Commit de los cambios
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "docs: update README"
+          commit_message: "docs: update GitHub profile"
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
