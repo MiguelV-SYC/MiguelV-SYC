@@ -16,22 +16,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Genera las GitHub Profile Summary Cards
       - name: Generate GitHub Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Actualiza la actividad reciente en el README
-      - name: Update Recent Activity
-        uses: Readme-Workflows/recent-activity@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Commit de los cambios
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "docs: update GitHub profile"
-          commit_user_name: github-actions[bot]
-          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
